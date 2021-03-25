@@ -2,11 +2,11 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import pageObjects.RegistrationForm;
+import page.RegistrationFormPage;
 
-public class PracticeForm {
+public class RegistrationFormTest {
 
-    RegistrationForm registrationForm=new RegistrationForm();
+    RegistrationFormPage registrationFormPage=new RegistrationFormPage();
 
     @BeforeAll
     static void setup() {
@@ -14,8 +14,8 @@ public class PracticeForm {
     }
 
     @Test
-    void selenideSearchTest() {
-        registrationForm
+    void registrationFormTest() {
+        registrationFormPage
                 .openPage()
                 .fillForm()
                 .checkData();
