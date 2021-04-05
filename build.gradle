@@ -7,7 +7,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'com.codeborne:selenide:5.18.0'
+    testImplementation 'com.codeborne:selenide:5.20.1'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
 
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.7.0"

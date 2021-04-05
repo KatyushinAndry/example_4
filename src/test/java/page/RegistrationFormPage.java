@@ -46,7 +46,7 @@ public class RegistrationFormPage {
     }
 
     public void checkData() {
-        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        $("#example-modal-sizes-title-lg").shouldHave(text(checkFillForm));
         $(".table-responsive").$(byText("Student Name")).parent().shouldHave(text(firstName), text(lastName));
         $(".table-responsive").$(byText("Student Email")).parent().shouldHave(text(email));
         $(".table-responsive").$(byText("Gender")).parent().shouldHave(text(gender));

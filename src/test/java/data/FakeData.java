@@ -25,5 +25,6 @@ public class FakeData {
             address=faker.address().streetAddress(),
             state="Haryana",
             phone=faker.number().digits(10),
-            city="Karnal";
+            city="Karnal",
+            checkFillForm='Thanks for submitting the form';
 }
